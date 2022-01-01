@@ -1,0 +1,24 @@
+.effect {
+    position: absolute;
+    z-index: -1;
+  }
+  .effect-3 {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    border: 20px solid #FD6F96;
+    border-radius: 50%;
+    left: 70%;
+    top: -130px;
+    animation: leftBounce 3s ease-in-out infinite;
+  }
+  @keyframes leftBounce {
+    0%, 100% {
+      transform: translateX(0);
+    }
+  
+    50% {
+      transform: translateX(40px);
+    }
+  }
+  
