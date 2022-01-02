@@ -1,0 +1,30 @@
+.effect {
+    position: absolute;
+    z-index: -1;
+  }
+  .effect-4 {
+    border-top: 30px solid transparent;
+    border-left: 30px solid var(--green--);
+    left: 30%;
+    top: 20%;
+    animation: spin 15s linear infinite;
+  }
+  
+  .effect-4:before {
+    content: '';
+    border-top: 30px solid transparent;
+    border-left: 30px solid var(--green--);
+    position: absolute;
+    opacity: 0.5;
+    left: -35px;
+    top: -25px;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
